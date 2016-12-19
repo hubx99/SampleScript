@@ -1,0 +1,55 @@
+<!doctype html>
+<html>
+<head>
+<style>
+div {
+	padding: 3px;
+}
+input {
+	margin: 0 4px 0 0;
+}
+h4 {
+	margin: 0 0 8px 0;
+}
+.container {
+	border: 1px solid #666;
+	margin: 10px;
+	padding: 15px;
+	border-radius: 15px;
+}
+</style>
+</head>
+<body>
+	<form method="post">
+		<div class="container">
+			<h4>Request</h4>
+			<div>
+				<input name="path" value="/api/test" placeholder="path">
+				<select name="meth">
+					<option>GET</option>
+					<option>POST</option>
+				</select>
+			</div>
+		</div>
+		<div class="container">
+			<h4>Response</h4>
+			<div>
+				<input name="status" value="200" placeholder="status">
+			</div>
+			<div>
+				<input name="headkey" placeholder="header key" value="Content-Type"><input name="headval" placeholder="header val" value="text/plain">
+			</div>
+			<div>
+				<input name="headkey2" placeholder="header key"><input name="headval2" placeholder="header val">
+			</div>
+			<div>
+				<textarea name="body" rows="10" cols="100">body</textarea>
+			</div>
+		</div>
+		<div style="padding:5px;">
+			<input style="padding:10px;" type="submit" value="submit">
+			<input style="padding:10px;" type="reset" value="reset">
+		</div>
+	</form>
+</body>
+</html>
